@@ -1,4 +1,4 @@
-package br.com.jvictornascimento.send_email.config;
+package br.com.jvictornascimento.send_email.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
