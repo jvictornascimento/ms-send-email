@@ -1,5 +1,6 @@
-package br.com.jvictornascimento.send_email;
+package br.com.jvictornascimento.send_email.service;
 
+import br.com.jvictornascimento.send_email.dto.Email;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
