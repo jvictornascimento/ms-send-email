@@ -1,5 +1,6 @@
 package br.com.jvictornascimento.send_email.controler;
 
+import br.com.jvictornascimento.send_email.models.EmailModel;
 import br.com.jvictornascimento.send_email.service.EmailService;
 import br.com.jvictornascimento.send_email.dto.Email;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,7 +17,7 @@ public class EmailController {
         this.service = service;
     }
     @PostMapping
-    public void sendEmail(@RequestBody Email email){
+    public void sendEmail(@RequestBody EmailModel email){
         service.sendMail(email);
     }
 }
