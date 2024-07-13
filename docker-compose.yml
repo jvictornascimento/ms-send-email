@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  db-msUser:
+    image: 'postgres:latest'
+    container_name: 'db-msSendEmail'
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: ms-email
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5434:5432"
+
+volumes:
+  db_data:
