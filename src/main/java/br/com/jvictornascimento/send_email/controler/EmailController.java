@@ -2,7 +2,6 @@ package br.com.jvictornascimento.send_email.controler;
 
 import br.com.jvictornascimento.send_email.models.EmailModel;
 import br.com.jvictornascimento.send_email.service.EmailService;
-import br.com.jvictornascimento.send_email.dto.Email;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
